@@ -1,0 +1,45 @@
+{
+  "name": "pimatic-manager",
+  "description": "Pimatic plugin for chart support",
+  "author": {
+    "name": "Kosta",
+    "email": "trebankosta@gmail.com"
+  },
+  "main": "manager",
+  "files": [
+    "app/manager-page.coffee",
+    "app/manager-template.jade",
+    "app/manager.css",
+    "manager.coffee",
+    "README.md",
+    "LICENSE",
+    "manager-config-schema.coffee",
+    "device-config-schema.coffee"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/treban/pimatic-charts",
+  "configSchema": "manager-config-schema.coffee",
+  "dependencies": {},
+  "keywords": [
+    "pimatic"
+  ],
+  "peerDependencies": {
+    "pimatic": ">=0.9.0"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  },
+  "bugs": {
+    "url": "https://github.com/treban/pimatic-charts/issues"
+  },
+  "maintainers": [
+    {
+      "name": "treban",
+      "email": "trebankosta@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
