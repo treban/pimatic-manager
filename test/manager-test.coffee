@@ -5,11 +5,6 @@ describe "pimatic", ->
   config =   
     settings:
       locale: "en"
-      authentication:
-        username: "test"
-        password: "test"
-        enabled: true
-        disabled: true
       httpServer:
         enabled: true
         port: 8080
@@ -67,13 +62,6 @@ describe "pimatic", ->
   before ->
     fs.writeFileSync configFile, JSON.stringify(config)
     process.env.PIMATIC_CONFIG = configFile
-    startup = require('./startup')
-    env = startup.env
-    startup.startup()
-      .then( (fw) ->
-        framework = fw
-        # env.logger.info("Startup completed ...")
-    ).catch( (err) -> env.logger.error(err))
 
   after ->
     fs.unlinkSync configFile
@@ -85,7 +73,7 @@ describe "pimatic", ->
   describe 'startup', ->
 
     it "should startup", (finish) ->
-      startup = require('../startup')
+      startup = require('./startup')
       startup.startup().then( (fm)->
         framework = fm
         finish()
