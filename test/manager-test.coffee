@@ -28,7 +28,7 @@ describe "pimatic", ->
       rules: []
       users: [
         {
-          username: "test",
+          username: "admin",
           password: "test",
           role: "admin"
         }
