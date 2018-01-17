@@ -26,7 +26,7 @@ module.exports = (grunt) ->
           timeout: 30000
           reporter: "spec"
           require: ['coffee-errors'] #needed for right line numbers in errors
-        src: ["test/phone-test.coffee"]
+        src: ["test/manager-test.coffee"]
       # blanket is used to record coverage
       testBlanket:
         options:
