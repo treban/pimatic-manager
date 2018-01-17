@@ -1,5 +1,9 @@
 language: node_js
 node_js:
   - "4"
-before_install: ./test/travis-before-install
-before_script: ./test/travis-before-script
+before_install: 
+ - chmod +x ./test/travis-before-install
+ - ./test/travis-before-install 
+before_script: 
+ - chmod +x ./test/travis-before-script
+ - ./test/travis-before-script
