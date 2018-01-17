@@ -1,6 +1,11 @@
 pimatic-manager
 =======================
 
+[![build status](https://img.shields.io/travis/treban/pimatic-manager.svg?branch=master?style=flat-square)](https://travis-ci.org/treban/pimatic-manager)
+[![version](https://img.shields.io/npm/v/pimatic-manager.svg?branch=master?style=flat-square)](https://www.npmjs.com/package/pimatic-manager)
+[![downloads](https://img.shields.io/npm/v/pimatic-manager.svg?branch=master?style=flat-square)](https://www.npmjs.com/package/pimatic-manager)
+[![license](https://img.shields.io/github/license/treban/pimatic-manager.svg)](https://github.com/treban/pimatic-manager)
+
 This plugin provides some management devices for [pimatic](https://pimatic.org/).
 
 Please make feature requests!
