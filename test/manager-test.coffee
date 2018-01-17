@@ -17,43 +17,43 @@ describe "pimatic", ->
         }
       debug: true
       logLevel: "debug"
-      plugins: [
-        {          
-          "plugin": "manager",
-          "active": true,
-          "debug": true
+    plugins: [
+      {          
+        "plugin": "manager",
+        "active": true,
+        "debug": true
+      }
+    ]
+    devices: []
+    rules: []
+    users: [
+      {
+        username: "admin",
+        password: "test",
+        role: "admin"
+      }
+    ],
+    roles: [
+      {
+        name: "admin",
+        permissions: {
+          pages: "write",
+          rules: "write",
+          variables: "write",
+          messages: "write",
+          events: "write",
+          devices: "write",
+          groups: "write",
+          plugins: "write",
+          updates: "write",
+          database: "write",
+          config: "write",
+          controlDevices: true,
+          restart: true
         }
-      ]
-      devices: []
-      rules: []
-      users: [
-        {
-          username: "admin",
-          password: "test",
-          role: "admin"
-        }
-      ],
-      roles: [
-        {
-          name: "admin",
-          permissions: {
-            pages: "write",
-            rules: "write",
-            variables: "write",
-            messages: "write",
-            events: "write",
-            devices: "write",
-            groups: "write",
-            plugins: "write",
-            updates: "write",
-            database: "write",
-            config: "write",
-            controlDevices: true,
-            restart: true
-          }
-        }
-      ],
-      variables: []
+      }
+    ],
+    variables: []
 
   fs = require 'fs'
   os = require 'os'
