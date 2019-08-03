@@ -1,6 +1,6 @@
 {
   "name": "pimatic-manager",
-  "description": "Pimatic plugin for chart support",
+  "description": "Pimatic plugin with managment improvement",
   "author": {
     "name": "Kosta",
     "email": "trebankosta@gmail.com"
@@ -17,7 +17,7 @@
     "device-config-schema.coffee"
   ],
   "version": "0.0.1",
-  "homepage": "https://github.com/treban/pimatic-charts",
+  "homepage": "https://github.com/treban/pimatic-manager",
   "configSchema": "manager-config-schema.coffee",
   "dependencies": {},
   "keywords": [
@@ -30,7 +30,7 @@
     "blanket": "^1.2.3",
     "bluebird": "^3.4.7",
     "coffee-script": "^1.12.3",
-    "cassert": "^0.1.2",    
+    "cassert": "^0.1.2",
     "coffee-errors": "^0.8.6",
     "decl-api": "0.0.22",
     "grunt": "^1.0.1",
@@ -45,7 +45,7 @@
     "npm": ">1.1.x"
   },
   "bugs": {
-    "url": "https://github.com/treban/pimatic-charts/issues"
+    "url": "https://github.com/treban/pimatic-manager/issues"
   },
   "maintainers": [
     {

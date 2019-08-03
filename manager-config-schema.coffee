@@ -1,5 +1,5 @@
 module.exports = {
-  title: "charts plugin config options"
+  title: "manager plugin config options"
   type: "object"
   required: []
   properties:
